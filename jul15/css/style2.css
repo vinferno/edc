@@ -1,0 +1,252 @@
+
+
+
+ored{
+	content: "";
+	display:block;
+	width:100px;
+	height:100px;
+	
+	background-color: red;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0%;
+	border-bottom-left-radius: 200%;
+	border-bottom-right-radius: 0;
+	position: absolute;
+	transform: rotate(135deg);;
+	top:100px;
+	left:100px;
+}
+
+
+oyellow{
+	content: "";
+	display:block;
+	width:100px;
+	height:100px;
+	
+	background-color: yellow;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0%;
+	border-bottom-left-radius: 200%;
+	border-bottom-right-radius: 0;
+	position: absolute;
+	transform: rotate(250deg);
+	top:200px;
+	left:165px;
+
+}
+
+ogreen{
+	content: "";
+	display:block;
+	width:100px;
+	height:100px;
+	
+	background-color: green;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0%;
+	border-bottom-left-radius: 200%;
+	border-bottom-right-radius: 0;
+	position: absolute;
+	transform: rotate(10deg);
+	top:210px;
+	left:40px;
+}
+
+
+
+ored2{
+		content: "";
+	display:block;
+	width:100px;
+	height:100px;
+	
+	background-color: red;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0%;
+	border-bottom-left-radius: 200%;
+	border-bottom-right-radius: 0;
+	position: absolute;
+	transform: rotate(180deg);;
+	top:120px;
+	left:150px;
+}
+
+
+
+oyellow2{
+	content: "";
+	display:block;
+	width:100px;
+	height:100px;
+	
+	background-color: yellow;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0%;
+	border-bottom-left-radius: 200%;
+	border-bottom-right-radius: 0;
+	position: absolute;
+	transform: rotate(280deg);;
+	top:228px;
+	left:138px;
+}
+
+ogreen2{
+	content: "";
+	display:block;
+	width:100px;
+	height:100px;	
+	background-color: green;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0%;
+	border-bottom-left-radius: 200%;
+	border-bottom-right-radius: 0;
+	position: absolute;
+	transform: rotate(48deg);;
+	top:168px;
+	left:28px;
+}
+
+ored3{
+	content: "";
+	display:block;
+	width:50px;
+	height:90px;	
+	background-color: red;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0%;
+	border-bottom-left-radius: 200%;
+	border-bottom-right-radius: 0;
+	position: absolute;
+	transform: rotate(160deg);;
+	top:135px;
+	left:95px;
+	
+}
+
+oyellow3{
+	content: "";
+	display:block;
+	width:50px;
+	height:90px;	
+	background-color: yellow;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0%;
+	border-bottom-left-radius: 200%;
+	border-bottom-right-radius: 0;
+	position: absolute;
+	transform: rotate(285deg);;
+	top:183px;
+	left:175px;
+	
+}
+ogreen3{
+	content: "";
+	display:block;
+	width:50px;
+	height:90px;	
+	background-color: green;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0%;
+	border-bottom-left-radius: 200%;
+	border-bottom-right-radius: 0;
+	position: absolute;
+	transform: rotate(32deg);;
+	top:220px;
+	left:110px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+obluec{
+	content: "";
+	display:block;
+	width:60px;
+	height:60px;
+	
+	background-color: blue;
+	border-radius: 50%;
+	position: absolute;
+	top:186px;
+	left:112px;
+	border-width: 6px;
+	border-style: solid;
+	border-color: hsla(60,100%,100%,1) ;
+	z-index: 5;
+
+}
+
+
+
+
+
+
+/*
+
+
+
+
+
+
+
+.clearfix::before,
+.clearfix::after{
+	content: "";
+	display: block;
+	clear:both;
+}
+
+
+h1::before{
+	content: "Hello ";
+} 
+h1::after{
+	content: "World";
+}
+
+h2::before{
+	content:"";
+	display: block;
+	width: 85px;
+	height:85px;
+	background-color: hsla(0,100%,50%,1);
+	border-radius:50%;
+	box-shadow:0 0 0 20px hsla(0,100%,50%,1),
+			   0 0 0 40px hsla(0,0%,80%,1),
+			   0 0 0 60px hsla(0,100%,50%,1),
+			   0 0 0 80px hsla(0,0%,90%,1);
+}
+
+h3{
+	height: 100px;
+	width: 250px;
+	background-color: hsla(60,100%,50%,1);
+	margin:0 auto;
+	-webkit-filter: drop-shadow(5px 5px 3px hsla(0,0%,0%,.25));
+
+	border-radius: 7px;
+	position: relative;
+}
+
+h3::after{
+	content: "";
+	display: block;
+	width:0px;
+	border-width: 20px 0px 0px 20px;
+	border-style: solid;
+	border-color: hsla(60,100%,50%,1) transparent transparent transparent;
+	position: absolute;
+	top:100%;
+	left:20px;
+	-webkit-filter: drop-shadow(5px 5px 5px hsla(0,0%,0%,.15));
+
+}
