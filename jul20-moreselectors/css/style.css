@@ -1,0 +1,217 @@
+
+
+*{box-sizing:border-box;}
+body{background-color:black;}
+
+	ul { 
+		color:black;
+		background-color: white;
+		margin:0 auto;
+		width:80%;
+		display: block;
+		}
+
+		li{ 
+			width:100%;
+			margin:0 auto;
+			margin-left: -2%;
+			padding:10px;
+			list-style: none;
+			color:black;
+			border-bottom:1px solid black;
+			}
+
+			hgroup{ padding:5px;}
+
+
+
+			a{
+				display: block;
+				text-align: right;
+				padding:10px;
+				background-color:hsla(120,100%,60%,.9);
+				color:white;
+				border-radius: 3px;
+				text-decoration: none;
+				border:1px solid hsla(120,50%,50%,6);
+				text-shadow:1px 1px 1px black; 
+				transition: all 0.5s ease-out;
+				}	
+				a:hover{
+				padding-right:100%;
+				}		
+ul li:nth-of-type(odd)>img {
+				float:left;
+				margin: 20px 10px 10px 20px;
+				border-radius: 50%;
+				padding:10px;
+				border:1px solid black;
+				transition:all 0.5s ease ;
+			}
+ul li:nth-of-type(even)>img{ 
+				float:right;
+				margin: 20px 10px 10px 20px;
+				border-radius: 50%;
+				padding:10px;
+				border:1px solid black;
+				transition:all 0.5s ease;
+			}
+ul li:nth-of-type(odd)>img:hover {
+	transform:rotate(-30deg) scale(1.5, 1.5);
+}
+ul li:nth-of-type(even)>img:hover {
+	transform:rotate(30deg) scale(1.5, 1.5);	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+*{border-bottom: 1px solid black;}
+
+
+#middle{background-color:hsla(0,50%,50%,.5);}
+
+.random{font-size: 125%;}
+
+li{background-color: hsla(200,50%,50%,.5);}
+
+p {font-size: 200%;}
+
+li:nth-of-type(3){
+	background-color:0,100,50,.25;
+}
+
+
+^:starts with
+$:ends with
+*:contains
+
+
+
+
+a:link{color:red;}
+a:visited{color:green;}
+a:hover{color: blue;}
+a:active{color:purple;}
+
+li p{color: blue;}
+
+body>ul>li{background-color:hsla(270,50%,50%,.55);}
+
+a[href^="http"]{color:green;}
+
+li[data-*="honda"]
+
+
+li[data-*="honda"]
+
+
+*/
+
