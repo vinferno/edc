@@ -1,0 +1,134 @@
+
+/*
+
+*, *::before,*::after{
+	box-sizing:border-box;
+}
+
+.clearfix::before,
+.clearfix::after{
+	content: "";
+	display: block;
+	clear:both;
+}
+
+html, body{
+	height:100%;
+}
+
+body{
+	background-image: linear-gradient(to top, #ccc,#fff);
+	margin:0;
+}
+
+div{
+	position: absolute;
+	top:0;
+	bottom: 100%%;
+	left: 0;
+	right: 0;
+	background-color: hsla(0,0%,0%,.5);
+	transition: all 250ms ease-in-out;
+}
+}
+
+ul {
+	padding:0;
+	margin:0;
+	list-style-type: none; 
+}
+
+figure{
+	margin:0;
+	position: relative;
+	overflow: hidden;
+}
+
+figcaption{
+	position: absolute;
+	bottom: -50%
+}
+
+li{
+	float:left;
+	display: inline-block;
+	width: 33.3333%;
+}
+
+img{
+	width:100%;
+	float:left;
+	height: 650px;
+	width: 500px;
+}
+
+a{
+	width: 50%;
+	height: 40px;
+	display: block;
+	border: 2px solid white;
+	line-height: 40px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	background-color: hsla(0,0%,100%,.25);
+	margin:-50% auto 0;
+
+}
+
+a, div, figcaption{
+	transition: all 200ms ease-in-out;
+}
+
+ul li:hover a{
+	margin-top: 50%;
+	
+}
+ul li:hover div{
+	bottom:0;
+}
+ul li:hover figcaption{
+	bottom:0;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+	color: white;
+} 
+*/
+
+a:hover{
+	border color: hsla(40,100%,50%,1);
+	background-color: hsla(40,100%,50%, .25)
+}
+
+h1{
+	font-size: 100px;
+	transition: all 500ms ease-in-out;
+}
+h1:hover {color:purple;
+	transition: all 50ms ease-in-out;
+	text-shadow:10px 10px 8px black;
+	transition:rotate();
+
+}
+h1:focus{
+	background-color: teal;
+}
+input:focus{
+	background-color: teal;
+	color red;
+}
+
+a{color: green;}
+
+a:link{
+	color:purple;
+	text-decoration: none;
+}
+
+a:visited{
+	color:pink;
+}
+a:hover{color:red;}
+
+a:active{color:blue;}
