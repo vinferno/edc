@@ -1,0 +1,42 @@
+%clearfix{
+	&::before,
+	&::after{
+		content: "";
+		display: block;
+		clear:both;
+	}
+}
+
+%background{
+	background-color: #decfcf;
+	padding:20px;
+}
+
+%margin1{
+	margin-bottom: 40px;
+}
+
+%margin2{
+	margin: 20px;
+}
+
+%margin3{
+	margin-top: 40px;
+}
+
+
+@mixin background-mixin{
+	background-color: transparentize($color-blue, .75);
+	border:1px solid darken($color-blue,5);
+	border-radius:10px;
+
+}
+
+@mixin h1-mix($bc,$c,$fs,$br,$p){
+	background-color:$bc;
+	color:red;
+	color:$c;
+	font-size:$fs;
+	border-radius: $br;
+	padding:$p;
+}

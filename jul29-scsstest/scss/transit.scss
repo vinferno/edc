@@ -1,0 +1,20 @@
+@import "transit-mixin";
+
+body{
+	@include bc(purple);
+}
+
+#block01{
+	
+	
+	@include layout-mix(left);	
+
+	li{
+		display:block;
+	@include layout-mix(right);	
+	}
+}
+
+#logo{
+	font-size: 30px;
+}

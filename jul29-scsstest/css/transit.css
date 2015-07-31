@@ -1,0 +1,15 @@
+body {
+  background-color: purple;
+}
+
+#block01 {
+  float: left;
+}
+#block01 li {
+  display: block;
+  float: right;
+}
+
+#logo {
+  font-size: 30px;
+}

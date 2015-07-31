@@ -1,0 +1,14 @@
+@mixin v-a{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+@mixin layout-mix($f){
+	float:$f;	
+}
+
+@mixin bc($c){
+	background-color: $c;
+}

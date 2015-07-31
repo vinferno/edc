@@ -1,0 +1,69 @@
+
+ *{box-sizing:border-box}
+div{
+	background-color: teal;
+	height:300px;
+	text-align: center;
+	margin:0;
+}
+
+.level01{
+	background-image:url("../img/banner.jpg");
+	background-size: cover;
+	text-align: center;
+	color:white;
+
+	div{
+		display: inline-block;
+		margin:20px auto 0px;
+		background-color: transparent;
+	}
+
+	p{
+		display: inline-block;
+		width:200px;
+		padding:20px;
+		background-color: hsl(208, 55%, 60%);
+		border:1px solid hsl(208, 55%, 60%);
+		border-radius: 20px;
+
+		&:nth-of-type(2){
+			background-color: transparent;
+			border-color: white;
+		}
+	}
+
+}
+
+
+.level02{
+	background-color: white;
+	color:hsl(208, 8%, 43%);
+
+		div{
+		display: inline-block;
+		margin:20px auto 0px;
+		background-color: transparent;
+	}
+
+}
+
+
+
+.level03{
+
+	background-color: white;
+
+
+
+	div{
+		display:block;
+		margin-left: 10%;
+		float:left;
+	
+	}
+i.fa{
+	font-size:40px;
+	color:white;
+}
+}

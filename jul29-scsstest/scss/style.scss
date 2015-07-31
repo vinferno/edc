@@ -1,0 +1,114 @@
+/* put your scss here */
+
+@import "variables";
+@import "answers";
+
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+	margin: 0;
+}
+
+nav a{
+	float:left;
+}
+
+nav{
+	@extend %clearfix;
+	@extend %margin1;
+}
+
+.btn{
+	padding:10px 20px;
+	background-color:$color-blue;
+	border-radius: 4px;
+	border: 1px solid invert(darken($color-blue, 5));
+	&.btn-1{
+		font-size: 16px;
+		border-width: 2px;
+	}
+
+		&.btn-2{
+		font-size: 20px;
+		border-width: 3px;
+	}
+
+		&.btn-3{
+		font-size: 24px;
+		border-width: 4px;
+	}
+
+		&.btn-4{
+		font-size: 28px;
+		border-width: 5px;
+	}
+
+
+
+}
+ol, ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	a {
+		color: $color-black;
+	}
+}
+a {
+	text-decoration: none;
+	color: $color-white;
+}
+h1 {
+	font-size: 24px;
+	line-height: 38px;
+	margin: 0;
+}
+
+nav {
+	a {
+		float: left;
+		color: $color-black;
+	}
+	ul {
+		float: right;
+		li {
+			display: inline-block;
+			line-height: 38px;
+		}
+	}
+}
+
+header, main {
+	padding: 0 10%;
+}
+
+
+nav{
+	@extend %background;
+}
+
+header{
+	@extend %background;
+
+}
+
+article{
+	//@extend %background;
+	@include background-mixin;
+	@extend %margin2;
+}
+
+footer{
+	@extend %background;
+	@extend %margin3;
+}
+
+header h1{
+	@include h1-mix(red,white,40px,10px,10px);
+}
+footer h1{
+	@include h1-mix($color-blue,yellow,20px,30px,40px);
+}
