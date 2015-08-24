@@ -1,0 +1,160 @@
+/* put your scss here */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
+body {
+  font-family: 'Roboto COndensed', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 300%;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 180%;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 150%;
+  margin-top: 0px;
+}
+
+h4 {
+  font-size: 125%;
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+  border-bottom: 1px solid lightgrey;
+  padding: 15px 0;
+}
+li:last-child {
+  border: none;
+}
+li::before, li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+p {
+  line-height: 2;
+  font-weight: 300;
+}
+
+li img {
+  float: left;
+  margin-right: 15px;
+}
+
+.content {
+  padding-top: 100px;
+  padding-bottom: 25px;
+}
+
+.btn {
+  border: none;
+  text-decoration: none;
+}
+
+.btn-lg {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btn-exmachina {
+  text-transform: uppercase;
+  color: #f2f2f2;
+  background-color: #e95a3a;
+  transition: all 250ms ease-in-out;
+  margin-top: 30px;
+}
+.btn-exmachina:hover {
+  background-color: #aa2f13;
+}
+
+.hero {
+  height: 350px;
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  height: 350px;
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.row:first-of-type img {
+  width: 100%;
+}
+
+a {
+  text-decoration: underline;
+  color: #e95a3a;
+}
+
+#row1 img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  background-image: url(../img/img01_1024.jpg);
+  background-color: #212121;
+  padding: 100px 0 25px;
+}
+
+#row3 .content {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+#row4 {
+  color: white;
+}
+#row4 h4, #row4 a, #row4 p {
+  margin: 0;
+  color: lightgrey;
+}
+#row4 a {
+  color: lightgrey;
+}
+#row4 img {
+  height: 70px;
+  width: 70px;
+}
+
+#dif {
+  color: #f2f2f2;
+}
+
+blockquote {
+  background-color: #f2f2f2;
+  color: #212121;
+  padding: 40px 0;
+}
+
+cite {
+  color: black;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .row a {
+    display: block;
+  }
+}
