@@ -1,0 +1,82 @@
+* {
+  text-align: center;
+  padding: 5px;
+  font-family: Gungsuh;
+  z-index: 1;
+}
+
+p {
+  font-size: 200%;
+}
+
+body, html {
+  background-color: #f3f0eb;
+  color: white;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-size: 100%;
+  padding: 0;
+}
+
+header {
+  height: 20%;
+}
+
+.bg {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/svg/_8_.svg");
+  background-size: auto 130%;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(167, 152, 108, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+h2 {
+  text-align: left;
+  float: left;
+}
+
+h1 {
+  font-family: Impact;
+  font-size: 400%;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 0.00px;
+  letter-spacing: 3px;
+  background-position: top;
+  background: url("../img/electricsky/ (8).gif") repeat 0 0, white;
+  -webkit-background-clip: text;
+  /* Webkit clips H1 background to text */
+  -webkit-text-fill-color: transparent;
+}
+
+a {
+  border: 1px solid black;
+  border-radius: 6px;
+  color: #250000;
+  background-color: #f8fefd;
+  background-image: url("../img/b");
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Impact;
+  font-size: 80%;
+}
+a:hover {
+  text-decoration: none;
+  color: darkred;
+  background-color: white;
+  border-color: darkred;
+  font-weight: 120%;
+  border-width: 2px;
+  background-image: none;
+}
