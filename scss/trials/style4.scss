@@ -1,0 +1,119 @@
+html,body{
+
+	height:100%;
+}
+
+
+body {
+    //overflow:hidden;    
+}
+
+
+
+.flexbody,.flexbody *{
+	box-sizing:border-box;
+	border:1px dashed black;
+
+
+}
+
+
+
+.flexbody{
+	display: flex;
+	width:100%;
+	height:100%;
+	position: relative;
+	left:15px;
+	
+
+}
+
+.flexbody>div{
+
+}
+
+
+.column{
+	display: flex;
+	flex-direction:column;
+	width:100%;
+	height: 100%;
+	flex:1;
+}
+
+
+.row{
+	display: flex;
+	flex-direction:row;
+	width:100%;
+	height:100%;
+	flex:1;
+	
+}
+
+
+.vtop{
+	flex:1;
+	display: flex;
+
+	&>div{
+		flex:1;
+}
+
+
+	.topcenter.h1{
+		
+	}
+}
+
+.vmiddle{
+	flex:5;
+	display: flex;
+
+	&>div{
+		flex:1;
+	}
+}
+
+.vbottom{
+	flex:1;
+	display: flex;
+
+	&>div{
+		flex:1;
+	}
+
+}
+
+.topcenter{
+
+}
+
+.level2{
+	background-color: hsla(0,50%,50%,.25);
+}
+
+.level3{
+	background-color: hsla(100,50%,50%,.25);
+}
+
+.content{
+	background-color: hsla(200,50%,50%,.25);
+	margin:0 auto;
+	text-align: center;
+}
+
+
+
+boxname{
+	display: none;
+}
+
+.h1{
+	width: 300px;
+	display: block;
+	margin:0 auto;
+	text-align: center;
+}
+

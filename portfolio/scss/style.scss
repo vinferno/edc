@@ -6,7 +6,7 @@
 body{
 	//background-image: url("../img/electricsky/ (7).gif");
 	//background-image: url("../img/sky/ (44).gif");
-	background-image: url("../img/sky/ (47).gif");
+	background-image: url("../img/sky/(47).gif");
 	background-position: center;
 	background-size: 100% 100%;
 }
@@ -28,11 +28,12 @@ body{
 	top:80%;
 	opacity: 1;
 	background-color: white;
-	background-image: url("../img/repeat/ (15).jpg");
+	background-image: url("../img/repeat/(15).jpg");
 	width: 100%;
 	height: 20%;
 	background-size: 30%;
 	-webkit-animation: anifloor ease 10s 1;	
+	z-index: -10;
 }
 
 .home{
@@ -57,7 +58,7 @@ body{
   	-webkit-text-stroke-width: 1.00px; 
   	letter-spacing: 3px;
 	background-position: top;
-	background: url("../img/electricsky/ (8).gif") repeat 0 0, white;
+	background: url("../img/electricsky/(8).gif") repeat 0 0, white;
 	-webkit-background-clip: text; /* Webkit clips H1 background to text */
 	-webkit-text-fill-color: transparent;
 }
@@ -100,8 +101,8 @@ img.ufo{
 
 @-webkit-keyframes anihome{
 	0% {opacity: .0;}
-	30% {opacity: .0;}
-	70% {opacity: 1;}
+	25% {opacity: .0;}
+	65% {opacity: 1;}
 }
 
 @-webkit-keyframes anifloor{
@@ -114,8 +115,8 @@ img.ufo{
 @-webkit-keyframes animain{
 	0% {opacity: .0;}
 	40% {opacity: .0;}
-	70% {opacity: .0;}
-	70% {opacity: 1;}
+	45% {opacity: .0;}
+	80% {opacity: 1;}
 }
 @-webkit-keyframes aniinvisible{
 	0% {opacity: .0;}
@@ -155,3 +156,29 @@ img.ufo{
 width: 100%;
 }
 
+p{
+	font-size: 5vmin;
+	margin-bottom: 0;
+	text-align: center;
+	font-family: Helvetica;
+	font-weight: 700;
+}
+
+.answers{
+	display:flex;
+	width:100%;
+	justify-content:center;
+	align-items:center;
+	height: 35%;
+	//border:1px solid red;
+}
+
+.answer{
+	background-color: hsla(200,30,40,.5);	
+	font-size: 6vmin;	
+	text-align: center;
+	font-family: Helvetica;
+	font-weight: 700;
+	flex:1;
+	margin:0 4%;
+}

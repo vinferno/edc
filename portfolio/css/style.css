@@ -250,7 +250,7 @@ html, body {
 }
 
 body {
-  background-image: url("../img/sky/ (47).gif");
+  background-image: url("../img/sky/(47).gif");
   background-position: center;
   background-size: 100% 100%;
 }
@@ -271,11 +271,12 @@ body {
   top: 80%;
   opacity: 1;
   background-color: white;
-  background-image: url("../img/repeat/ (15).jpg");
+  background-image: url("../img/repeat/(15).jpg");
   width: 100%;
   height: 20%;
   background-size: 30%;
   -webkit-animation: anifloor ease 10s 1;
+  z-index: -10;
 }
 
 .home {
@@ -300,7 +301,7 @@ body {
   -webkit-text-stroke-width: 1.00px;
   letter-spacing: 3px;
   background-position: top;
-  background: url("../img/electricsky/ (8).gif") repeat 0 0, white;
+  background: url("../img/electricsky/(8).gif") repeat 0 0, white;
   -webkit-background-clip: text;
   /* Webkit clips H1 background to text */
   -webkit-text-fill-color: transparent;
@@ -357,10 +358,10 @@ img.ufo {
   0% {
     opacity: .0;
   }
-  30% {
+  25% {
     opacity: .0;
   }
-  70% {
+  65% {
     opacity: 1;
   }
 }
@@ -385,10 +386,10 @@ img.ufo {
   40% {
     opacity: .0;
   }
-  70% {
+  45% {
     opacity: .0;
   }
-  70% {
+  80% {
     opacity: 1;
   }
 }
@@ -452,4 +453,38 @@ img.ufo {
 
 .level {
   width: 100%;
+}
+
+p {
+  font-size: 5vmin;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: Helvetica;
+  font-weight: 700;
+}
+
+.answers {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 35%;
+}
+
+.answer {
+  background-color: rgba(71, 112, 133, 0.5);
+  font-size: 6vmin;
+  text-align: center;
+  font-family: Helvetica;
+  font-weight: 700;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 4%;
 }

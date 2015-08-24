@@ -1,0 +1,72 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+  margin: 0;
+}
+
+button {
+  display: block;
+  margin: 10px;
+  padding: 10px 30px;
+  color: teal;
+  background-color: seagreen;
+  border: 1px solid blue;
+  cursor: pointer;
+  outline: none;
+}
+button:hover {
+  color: #001a1a;
+  background-color: #990000;
+}
+
+div#bg-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+}
+
+div.img-1 {
+  background-image: url("../got/house-stark.jpg");
+}
+
+div.img-2 {
+  background-image: url("../got/house-targaryen.jpg");
+}
+
+div.img-3 {
+  background-image: url("../got/house-arryn.jpg");
+}
+
+div.img-4 {
+  background-image: url("../got/house-baratheon.jpg");
+}
+
+div.img-5 {
+  background-image: url("../got/house-lannister.jpg");
+}
+
+div.img-6 {
+  background-image: url("../got/house-martell.jpg");
+}
+
+div.img-7 {
+  background-image: url("../got/house-tully.jpg");
+}
+
+div.img-8 {
+  background-image: url("../got/house-tyrell.jpg");
+}
