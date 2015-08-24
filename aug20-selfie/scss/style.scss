@@ -1,0 +1,173 @@
+$mc1:blue;
+$mc2:orange;
+$mc3:green;
+$mc4:yellow;
+$mc5:white;
+
+$colors: $mc1 $mc2 $mc3 $mc4 $mc5;
+
+.flex{
+		
+	height: 100%;
+	width: 100%;
+}
+
+body,html{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+section{
+
+	width: 100%;
+	color:white;
+	font-size: 150%;
+	flex:1;
+	margin:0;
+	box-sizing:border-box;
+	float:left;
+	display: flex;
+	div, p{
+		flex:1;
+	}
+}
+
+#nav{
+	max-height: 10%;
+	margin:0;
+}
+
+
+
+
+@for $i from 1 through 5 {
+	p:nth-of-type(#{$i}),.title{
+		$hue:random(360);
+		$newhue: $hue;
+		$lum: random(80);
+		$lum2:0;
+		$sat:random(80);
+		$sat2:0;
+
+		@if ($lum < 20){
+			$lum: ($lum + 20);
+			}
+
+		@if($lum <= 50){
+			$lum2:70;
+		}@else{
+			$lum2:30;
+		}
+
+		@if ($sat < 20){
+			$sat: ($sat + 20);
+			}
+
+		@if($sat <= 50){
+			$sat2:70;
+		}@else{
+			$sat2:30;
+		}
+
+		background-color: hsla($newhue, $sat, $lum, 1);
+		$color:($newhue + 180);
+		@if ($color > 360){
+			$color:($newhue - 180); 
+		}		
+		color:hsl($color,$sat2,$lum2);
+		p{float:left;}
+		div{
+			
+
+				flex:.6;
+				border:1px solid red;			
+		}
+	}
+}
+
+
+
+
+h1{
+	background-color: random(360);
+	width:6vw*2;
+	font-size: 6vw;
+
+}
+
+.title{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.picss {
+	//width: 33.333%;
+	//height: 20vw;
+}
+
+$pics: one two three four five;
+    @each $pic in $pics{
+    $i: index($pics, $pic);
+    .picss div:nth-of-type(#{$i}){
+    	position: relative;
+        background-image: url(../img/name-#{$pic}.jpg);
+        background-size: cover;
+        background-position: center;
+         -webkit-animation: move#{$i} ease 3s infinite;
+
+    }
+}
+
+@keyframes move1{
+	0% {
+		top:0;
+	}
+	50% { 
+		top:500px;
+	}
+
+		100% {
+		top:0;
+	}
+}
+
+@keyframes move2{
+	0% {
+		top:0;
+	}
+	50% { 
+		top:-60px;
+	}
+
+		100% {
+		top:0;
+	}
+}
+
+@keyframes move3{
+	0% {
+		top:300px;
+	}
+	50% { 
+		top:0px;
+	}
+
+		100% {
+		top:300px;
+	}
+}
+
+@keyframes move4{
+	0% {
+		top:0
+	}
+	50% { 
+		top:-500px;
+	}
+
+		100% {
+		top:0;
+	}
+}

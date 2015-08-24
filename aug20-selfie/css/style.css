@@ -1,0 +1,253 @@
+.flex {
+  height: 100%;
+  width: 100%;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+section {
+  width: 100%;
+  color: white;
+  font-size: 150%;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0;
+  box-sizing: border-box;
+  float: left;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+section div, section p {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#nav {
+  max-height: 10%;
+  margin: 0;
+}
+
+p:nth-of-type(1), .title {
+  background-color: #b983ab;
+  color: #178234;
+}
+p:nth-of-type(1) p, .title p {
+  float: left;
+}
+p:nth-of-type(1) div, .title div {
+  -webkit-flex: .6;
+      -ms-flex: .6;
+          flex: .6;
+  border: 1px solid red;
+}
+
+p:nth-of-type(2), .title {
+  background-color: #3a20a2;
+  color: #c0c99c;
+}
+p:nth-of-type(2) p, .title p {
+  float: left;
+}
+p:nth-of-type(2) div, .title div {
+  -webkit-flex: .6;
+      -ms-flex: .6;
+          flex: .6;
+  border: 1px solid red;
+}
+
+p:nth-of-type(3), .title {
+  background-color: #343e28;
+  color: #ad7de8;
+}
+p:nth-of-type(3) p, .title p {
+  float: left;
+}
+p:nth-of-type(3) div, .title div {
+  -webkit-flex: .6;
+      -ms-flex: .6;
+          flex: .6;
+  border: 1px solid red;
+}
+
+p:nth-of-type(4), .title {
+  background-color: #366318;
+  color: #b79cc9;
+}
+p:nth-of-type(4) p, .title p {
+  float: left;
+}
+p:nth-of-type(4) div, .title div {
+  -webkit-flex: .6;
+      -ms-flex: .6;
+          flex: .6;
+  border: 1px solid red;
+}
+
+p:nth-of-type(5), .title {
+  background-color: #582d55;
+  color: #7de882;
+}
+p:nth-of-type(5) p, .title p {
+  float: left;
+}
+p:nth-of-type(5) div, .title div {
+  -webkit-flex: .6;
+      -ms-flex: .6;
+          flex: .6;
+  border: 1px solid red;
+}
+
+h1 {
+  background-color: 123;
+  width: 12vw;
+  font-size: 6vw;
+}
+
+.title {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.picss div:nth-of-type(1) {
+  position: relative;
+  background-image: url(../img/name-one.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-animation: move1 ease 3s infinite;
+}
+
+.picss div:nth-of-type(2) {
+  position: relative;
+  background-image: url(../img/name-two.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-animation: move2 ease 3s infinite;
+}
+
+.picss div:nth-of-type(3) {
+  position: relative;
+  background-image: url(../img/name-three.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-animation: move3 ease 3s infinite;
+}
+
+.picss div:nth-of-type(4) {
+  position: relative;
+  background-image: url(../img/name-four.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-animation: move4 ease 3s infinite;
+}
+
+.picss div:nth-of-type(5) {
+  position: relative;
+  background-image: url(../img/name-five.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-animation: move5 ease 3s infinite;
+}
+
+@-webkit-keyframes move1 {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 500px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes move1 {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 500px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-webkit-keyframes move2 {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -60px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes move2 {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -60px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-webkit-keyframes move3 {
+  0% {
+    top: 300px;
+  }
+  50% {
+    top: 0px;
+  }
+  100% {
+    top: 300px;
+  }
+}
+@keyframes move3 {
+  0% {
+    top: 300px;
+  }
+  50% {
+    top: 0px;
+  }
+  100% {
+    top: 300px;
+  }
+}
+@-webkit-keyframes move4 {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -500px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes move4 {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -500px;
+  }
+  100% {
+    top: 0;
+  }
+}
