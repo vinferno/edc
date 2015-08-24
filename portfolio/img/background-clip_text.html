@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://valuedstandards.com/static/test/clip.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>background-clip:text</title>
+	<style>
+		body { text-align: center; }
+		p { text-align: left; }
+		#wrap{ margin: 5% auto; width: 700px; }
+		h1, h2 {
+			font-size: 84px;
+			font-weight: bold;
+			margin: 0;
+			/* Note: background rule ends with ", white" ! None supporting browsers get white bg */
+			background: url(http://upload.wikimedia.org/wikipedia/commons/8/89/Bokeh_Example.jpg) repeat 0 0, white;
+			color: #FF8C00; /* non webkit browsers */
+			-webkit-background-clip: text; /* Webkit clips H1 background to text */
+			-webkit-text-fill-color: transparent;  /* Webkit text color */
+		}
+		h1 span { font-size: 100px; line-height: 100px; display: block; }
+		h2 { font-size: 42px; margin-bottom: 60px; }
+	</style>
+	<!--[if IE]><style>h1, h2 { background-image: none; }</style><![endif]-->
+<style type="text/css"></style></head>
+<body>
+
+<div id="wrap">
+	<h1>Valued Standards <span>♥</span></h1>
+	<h2>Plain ol' selectable text…</h2>
+	<p>This is a test with <code>-webkit-background-clip: text;</code></p>
+	<p>If it does not look pretty you're not using Safari or Chrome :-)</p>
+	<p>NOTE: <a href="http://www.w3.org/Style/CSS/Tracker/issues/17">It seems Webkit will remove <code>-webkit-background-clip: text;</code> in favour of a better solution</a></p>
+</div> 
+
+<h2>wow this is amazing</h2>
+
+<script> var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script><script src="./background-clip_text_files/ga.js" type="text/javascript"></script>
+<script> var pageTracker = _gat._getTracker("UA-260972-3"); pageTracker._trackPageview(); </script>
+
+</body></html>
