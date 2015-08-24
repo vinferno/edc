@@ -1,0 +1,44 @@
+html{
+	width: 100%;
+	height:100%;
+}
+body{
+	height: 100%;
+	width: 100%;
+}
+.b{
+	background-color: green;
+	width: 100%;
+	height:100%;
+	display: flex;
+	>div:nth-of-type(2){
+		flex:5;
+	}
+
+}
+
+div{
+	flex:1;
+	display: flex;
+	background-color: hsla(0,0%,50%,.5);
+	height: 100%;
+	width: 100%;
+	border:1px solid black;
+	box-sizing:border-box;
+}
+
+.row{
+	flex-direction: column;
+}
+
+.column{
+	flex-direction:row;
+}
+
+.ag1 ,.ag3{
+	height:20%;
+}
+
+.ag2{
+	flex:2.5;
+}
