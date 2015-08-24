@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: green;
+}
+
+.v1 {
+  display: inline-block;
+  width: 50vw;
+  height: 20vh;
+  background-color: red;
+  position: absolute;
+  top: 50vh;
+  left: 26vw;
+  overflow: hidden;
+}
+
+.v2 {
+  background-image: url(http://stuffpoint.com/animal-lovers/image/326681-animal-lovers-cool.jpg);
+  background-size: 100vw;
+  display: inline-block;
+  width: 50vw;
+  background-color: blue;
+  position: absolute;
+  left: 25vw;
+  top: 16.66667vh;
+}
+
+@media screen and (min-width: 600px) {
+  .v1 {
+    display: none;
+  }
+
+  body {
+    background-color: pink;
+  }
+}

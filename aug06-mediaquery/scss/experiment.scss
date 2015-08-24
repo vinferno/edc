@@ -1,0 +1,53 @@
+*{box-sizing:border-box;
+	position: relative;
+	margin:0;
+
+}
+
+body{
+	background: {
+		color:green;
+	}
+}
+
+
+.level{
+	background-color: red;
+	&::after, &::before{
+	content: "";
+	display: block;
+	clear: both;
+}
+}
+
+
+.split2{
+	background-color: yellow;
+	width:50%;
+	float: left;
+	&:nth-child(2){
+		background-color: orange;
+	}
+}
+
+/*
+
+.split3{
+
+	background-color: pink;
+	width:33.3333%;
+	float: left;
+	&:nth-child(2){
+		background-color: orange;
+	}
+	&:nth-child(3){
+		background-color: blue;
+	}
+
+
+}
+*/
+
+
+
+

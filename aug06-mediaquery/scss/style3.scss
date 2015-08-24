@@ -1,0 +1,135 @@
+
+
+$vw:100px;
+
+$cs:.5;
+
+
+
+
+@media screen and (max-width: 100px)
+{
+	*{
+		$vw:100px;
+		width:$vw*$cs;
+	}
+}
+
+@media screen and (max-width: 200px)
+{
+	*{
+		$vw:200px;
+		width:$vw*$cs;
+	}
+}
+
+@media screen and (max-width: 300px)
+{
+	*{
+		$vw:300px;
+		width:$vw*$cs;
+	}
+}
+
+@media screen and (max-width: 400px)
+{
+	*{
+		$vw:400px;
+		width:$vw*$cs;
+	}
+}
+
+@media screen and (max-width: 500px)
+{
+	*{
+		$vw:500px;
+		width:$vw*$cs;
+	}
+}
+
+@media screen and (max-width: 600px)
+{
+	*{
+		$vw:600px;
+		width:$vw*$cs;
+	}
+}
+
+@media screen and (max-width: 700px)
+{
+	*{
+		$vw:700px;
+		width:$vw*$cs;
+	}
+}
+
+@media screen and (max-width: 800px)
+{
+	*{
+		$vw:800px;
+		width:$vw*$cs;
+	}
+}
+
+@media screen and (max-width: 900px)
+{
+	*{
+		$vw:900px;
+		width:$vs*$cs;
+	}
+}
+
+@media screen and (max-width: 1000px)
+{
+	*{
+		$vw:1000px;
+	}
+}
+
+@media screen and (max-width: 1100px)
+{
+	*{
+		$vw:1100px;
+	}
+}
+
+@media screen and (max-width: 1200px)
+{
+	*{
+		$vw:1200px;
+	}
+}
+
+@media screen and (max-width: 1300px)
+{
+	*{
+		$vw:1300px;
+	}
+}
+
+@media screen and (max-width: 1400px)
+{
+	*{
+		$vw:1400px;
+	}
+}
+
+@media screen and (max-width: 1500px)
+{
+	*{
+		$vw:1500px;
+	}
+}
+
+@media screen and (max-width: 1600px)
+{
+	*{
+		$vw:1600px;
+	}
+}
+
+.v1{
+	width:$vw*.5;
+	height:100px;
+	background-color: red;
+}

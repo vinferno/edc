@@ -1,0 +1,53 @@
+
+
+
+*{
+	
+	box-sizing:border-box;
+
+}
+
+body{
+	background-color: green;
+}
+
+
+.v1{
+	display:inline-block;
+	width:100vw*.5;
+	height:100vh*.2;
+	background-color: red;
+	position: absolute;
+	top:50vh;	
+	left:100vw*.26;
+	overflow: hidden;
+
+}
+.v2{
+	background-image: url(http://stuffpoint.com/animal-lovers/image/326681-animal-lovers-cool.jpg);
+
+
+	
+
+
+	background-size: 100vw;
+	display:inline-block;
+	width:100vw*.5;
+	background-color: blue;
+	position: absolute;
+	left:(100vw - 100vw*.5)/2;	
+	top:(100vh - 100vh*.5)/3;	
+}
+
+@media screen and (min-width: 600px)
+{
+
+.v1{display: none;}
+
+body{
+	background-color: pink;
+
+}
+
+
+}
