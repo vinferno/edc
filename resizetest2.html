@@ -29,25 +29,25 @@ body,html{
 </div><div id="testdiv8" onclick="vproperty(this.id)">
 
 <script>
-setInterval(function () {myTimer("testdiv1")}, 1000);
+
+setInterval(function () {myTimer("testdiv1")}, 1000);// sets a function to go off every 1 secon(1000milliseconds)
 setInterval(function () {myTimer("testdiv2")}, 1000);
 setInterval(function () {myTimer("testdiv3")}, 1000);
 setInterval(function () {myTimer("testdiv4")}, 1000);
 
-function vproperty(clickedId) {
-	var perpx = Number(prompt("1=% 2=px"));
+function vproperty(clickedId) { // setting the vproperty funtion with the parameter clickedId
+	var perpx = Number(prompt("1=% 2=px")); //set the variable perpx to user input 1 or 2
 	var userWidth= prompt("width?");
 	var userHeight=prompt("height?");
 	var userColor= prompt("color?");
 	var w = window.innerWidth;
-    var h = window.innerHeight;   
-  
+    var h = window.innerHeight;  
     if ( perpx === 1){    	
      document.getElementById(clickedId).style.width = userWidth + "%";
      document.getElementById(clickedId).style.height = userHeight + "%";
- 	}else{ 	
+ 	}else{
  	 document.getElementById(clickedId).style.width = userWidth + "px";
-     document.getElementById(clickedId).style.height = userHeight + "px";	
+     document.getElementById(clickedId).style.height = userHeight + "px";
  	}
     document.getElementById(clickedId).style.backgroundColor = userColor + "";
 
@@ -56,6 +56,7 @@ function vproperty(clickedId) {
     var atts = document.getElementById(clickedId).id;
     document.getElementById(clickedId).innerHTML = "Width: " + idWidth + "<br>Height: " + idHeight + "<br>ID: " + atts;
 }
+
 function myTimer(elname) {
 	var w = window.innerWidth;
     var h = window.innerHeight;
@@ -70,6 +71,7 @@ function myTimer(elname) {
      	document.getElementById(elname).style.width = 100 + "%";
      }
 }
+
 </script>
 
 </body>
