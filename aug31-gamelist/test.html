@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom_ready</title>
+    <script type="application/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            [].forEach.call(document.querySelectorAll('a'), function(el) {
+                el.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log(el.getAttribute('href'));
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<a href="#1">1</a>
+<a href="#2">2</a>
+<a href="#3">3</a>
+<a href="#4">4</a>
+<a href="#5">5</a>
+</body>
+</html>
